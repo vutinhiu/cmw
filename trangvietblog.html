@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width = device-width, initial-scale=1.0">
-        <title>Tải lên blog mới</title>
-        <link rel="stylesheet" href="../trangchu.html">
-        <link rel="stylesheet" href="../CSS/trangvietblog.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="banner"> <!--class cho ảnh nền-->
+<html lang="en">    
+<head>
+        <meta charset="UTF-8"/> <!--cài charset về utf8 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--chỉnh khu vực hiển thị theo kích thước của thiết bị -->
+        <title>Blog </title>
+        <link rel="stylesheet" href="css/style.css">     
+        <link rel="stylesheet" href="css/bootstrap.css">   
+        <link rel="stylesheet" href="css/bootstrap.css.map">   
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">        
+</head>    
+<body>    
+        <!-- <div class="banner"> 
             <input type="file" accept="image/*" id="banner-upload" class="hidden">            
             <label for="banner-upload" class="banner-upload-btn"><img src="https://icons-for-free.com/iconfiles/png/512/box+document+outline+share+top+upload+icon-1320195323221671611.png" alt=""></label>
             <h1 class="upload-description">Tải ảnh nền lên</h1>
@@ -17,6 +18,109 @@
         <div class="blog">
             <textarea type="textarea" class="title" placeholder="Tên bài Blog"></textarea><br/>
             <textarea type="textarea1" class="article" placeholder="Nội dung của bài"></textarea>
+        </div> -->
+        <div class="container " id="navbar" style="padding-top:80px">
+            <nav class="navbar navbar-expand-lg navbar-light  border  " >
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG</a>
+                      </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">YOUTUBE</a>
+                      </li>
+                      
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">PODCAST</a>
+                      </li>
+                  
+                  </ul>
+                </div>
+                <div class="collapse navbar-collapse nav justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+
+                          <li class="nav-item ">
+                            <div >
+                                <a   class="nav-link" href="index.html">The Present Writer</a>
+                                <!-- <p class="site-description">A Minimalist Blog that Maximizes Your Life</p> -->
+                            </div>
+                        </li>
+                    
+                    </ul>
+                  </div>
+
+                  <div class="collapse navbar-collapse nav justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">GIỚI THIỆU</a>
+                        </li>
+                          <li class="nav-item">
+                          <a class="nav-link" href="#">MỤC LỤC</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">GỢI Ý</a>
+                        </li>
+                    
+                    </ul>
+                  </div>
+              </nav> 
+
         </div>
+        <div class="container">
+            
+            <div class="row" id="body">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-12" id="col-left">
+                            <!-- id="col-left" -->
+                            <p id="title">"Một cuốn sách về chủ nghĩa tối giản"</p>
+                            <a href="#"><img id="img" class="img-fluid" src="file:///C:/Users/C%20Min%20Computer/Desktop/2022-03-31-Haravan-book-photo-2.webp" alt=""></a>
+                            <p>Chào bạn đọc yêu quý của The Present Writer blog, Sau rất nhiều thử thách, chờ đợi, và quyết tâm, “Một cuốn sách về Chủ nghĩa tối giản” (Phiên bản 2022) chính thức phát hành !!!  Bạn đọc tại Việt Nam có thể mua sách ở những địa chỉ sau: Shopee  Tiki The Present Writer Shop Bạn đọc tại nước ngoài có thể tham khảo thông tin sau: Tại Úc: Viet Book Alley Tại Nhật: iShite, Macawshop Ebook & Audibook: Phiên bản sách điện tử (ebook) và sách nói (audio book) sẽ ra mắt cuối năm 2022 — Quá trình sản xuất, in ấn và phát hành tái bản “Một cuốn sách về Chủ nghĩa tối giản” thực sự là một cuộc hành trình dài và nhiều chông gai — khó khăn tới mức có những lúc …</p>
+                            <a href="#" id="a">[Read more...]</a>
+                            <hr>
+                        </div>
+                        <div class="col-md-12" id="col-left">
+                            <!-- id="col-left" -->
+                            <p id="title">"Một cuốn sách về chủ nghĩa tối giản"</p>
+                            <a href="#"><img id="img" class="img-fluid" src="https://i0.wp.com/thepresentwriter.com/wp-content/uploads/2022/01/Blog-Feature-_thepresentwriter_net-worth.jpeg?ssl=1" alt=""></a>
+                            <p>"Lương tháng bao nhiêu?" chưa phải là câu hỏi đáng sợ nhất. Hơn 10 năm trước, tôi tình cờ biết đến khái niệm "net worth" (tài sản ròng) trong một một lần gõ tên các ngôi sao nổi tiếng lên mạng Internet. "Britney Spears: “$XX million net worth", "Bill Gates: “$XXX billion net worth"—net worth hiện lên như là một thông số quan trọng, được ghi ngay trên profile (mô tả) của những tên tuổi lớn. Điều này làm tôi từng nghĩ rằng net worth chỉ dành cho những người nổi tiếng, quyền lực và giàu có mà thôi. Nhưng sau này, khi tìm hiểu thêm về tài chính cá nhân, tôi mới nhận ra rằng ai cũng có net worth. Thậm chí, nó quan trọng với tất cả mọi người. Rất nhiều người Việt có thói quen hỏi: "Lương … </p>
+                            <a href="#" id="a">[Read more...]</a>
+                            <hr>
+                        </div>
+                        <div class="col-md-12" id="col-left">
+                            <!-- id="col-left" -->
+                            <p id="title">"Một cuốn sách về chủ nghĩa tối giản"</p>
+                            <a href="#"><img id="img" class="img-fluid" src="https://i0.wp.com/thepresentwriter.com/wp-content/uploads/2021/12/Blog-Feature-_thepresentwriter.jpeg?ssl=1" alt=""></a>
+                            <p>Minh hoạ bởi Từ Hà An cho The Present Writer Đây là bài viết đặc biệt nhất trong lịch sử của The Present Writer. Thật vậy; Ngay từ ngày đầu lập blog, tôi không ngừng tưởng tượng sẽ có ngày mình ngồi xuống bàn viết, hít một hơi thật sâu, thở ra nhẹ nhàng và gõ: “Bài viết này chia sẻ bí mật lớn nhất tạo nên thành công của tôi”. Nhưng “bí mật” đó đặc biệt tới mức, tôi phải kìm mình lại. Tôi muốn phải thực sự chắc chắn, phải qua trải nghiệm thực tế trong vài năm (!) rồi mới chia sẻ rộng rãi tới bạn đọc. ------ Khi mới biết đến phương pháp này (khoảng cuối năm 2015), tôi còn là một nghiên cứu sinh mới chập chững vào chương trình Tiến sĩ tại Mỹ, thiếu tự tin và hay so sánh, tôi không …</p>
+                            <a href="#" id="a">[Read more...]</a>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-md-12" id="col-right">
+                            <a href="#"><img id="img" class="img-fluid" src="https://i0.wp.com/thepresentwriter.com/wp-content/uploads/2020/07/Chi-Nguyen_The-Present-Writer.jpg?ssl=1" alt=""></a>
+                            <p>The Present Writer là “khu vườn xanh yên tĩnh” của Chi Nguyễn—Tiến sĩ Giáo dục tại Mỹ. Đọc thêm về Chi & Blog</p>
+                        </div>
+                        <div class="col-md-12" id="col-right">
+                            <p>“Một cuốn sách về Chủ nghĩa tối giản” là cuốn sách đầu tay của Chi về đề tài tối giản hóa cuộc sống. Sách xuất bản lần đầu vào năm 2018 và tái bản mới nhất năm 2022.</p>
+                        </div>
+                        <div class="col-md-12" id="col-right">
+                            <p>5 bước xây dựng một blog thành công & 1 khoá học làm blog miễn phí. Xem tại đây</p>
+                        </div>
+                        <div class="col-md-12" id="col-right">
+                            <p>5 bước xây dựng một blog thành công & 1 khoá học làm blog miễn phí. Xem tại đây</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
     </body>
 </html>
