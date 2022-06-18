@@ -38,13 +38,15 @@
                                 case "post": include_once('include/post.php'); break;
                                 case "menucat": include_once('include/menucat.php'); break;
                                 case "search": include_once('include/search/search.php'); break;
+                               
+                              
                                 
                             }
-                        }else{
-                            include_once('include/menuleft.php'); 
+                        }else {
+                            
                          
                         }
-                                
+                        include_once('include/menuleft.php');            
                     ?>
         </div>
                 <!-- menuleft -->

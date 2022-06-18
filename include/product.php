@@ -11,13 +11,14 @@
                     <div class="col-md-12" id="col-left">
                         <!-- id="col-left" -->
                         <p id="title"><?php echo$row['prd_name']?></p>
-                        <a href="" class="text-center" style="size:10px;"><?php echo$row['prd_content']?></a>
+                        <p class="text-center"><?php echo $row['prd_content']?>...</p> <br>
                         <a href="#"><img id="img" class="img-fluid" src="admin/images/<?php echo$row['prd_image']?>" alt=""></a>
+                        <p> <?php echo $row['prd_details']?></p>
                         <p>Chào bạn đọc yêu quý của The Present Writer blog, 
                             Sau rất nhiều thử thách, chờ đợi, và quyết tâm, “Một cuốn sách về Chủ nghĩa tối giản” (Phiên bản 2022) chính thức phát hành !!! 
                         </p>    
                         
-                        <strong style="color: #993300;"><?php echo $row['prd_status']?></strong>
+                        <strong style="color: #993300;">Có bán trên</strong>
                         </br>
                         <ul>
                             <li><a href="">Shopee</a></li>
@@ -33,16 +34,6 @@
                             <li>Tại Nhật: <a href="">iShite, Macawshop </a></li>
                         </ul>
                         </br>
-        
-                        <strong style="color: #993300;">Ebook & Audibook: </strong>
-                        </br>
-                        <p>Phiên bản sách điện tử (ebook) và sách nói (audio book) sẽ ra mắt cuối năm 2022 </br>
-                        </br>— </br>
-                        </br>Quá trình sản xuất, in ấn và phát hành tái bản “Một cuốn sách về Chủ nghĩa tối giản” thực sự là một cuộc hành trình dài và nhiều chông gai — khó khăn tới mức có những lúc mình đã định bỏ cuộc giữa chừng. Nhưng may mắn có gia đình, team The Present Writer, bạn bè làm trong lĩnh vực xuất bản, các bạn điều phối sàn thương mại điện tử, và rất nhiều bạn đọc The Present Writer đã tin tưởng, giúp đỡ và động viên mình để đi tới đích. Mình thực sự biết ơn!
-                        Cảm ơn sự chờ đợi và ủng hộ của tất cả mọi người! </br>
-            
-
-
 
                         <!--  -->
                         </br>Be present,</br>
@@ -100,6 +91,7 @@
         </div>
  </div>
     </div>
+ 
     </div>
 
             

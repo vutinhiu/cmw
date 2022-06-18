@@ -20,9 +20,9 @@
             <div class="collapse navbar-collapse nav justify-content-center" >
                 <ul class="navbar-nav">
 
-                      <li class="nav-item ">
+                      <li class="nav-item text-center">
                     
-                            <a  class="nav-link text-center"  id="logo"href="index.php">The Present Writer</a>
+                            <a href="index.php" ><img src="images/logo2.png" alt=""style="width:50%"></a>
                     </li>
                 
                 </ul>
@@ -38,7 +38,7 @@
                     </li>
                     
                     <li class="nav-item">
-                      <a class="nav-link" href="#">GỢI Ý</a>
+                      <a class="nav-link" href="note.php">GỢI Ý</a>
                     </li>
                 
                 </ul>

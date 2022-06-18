@@ -30,16 +30,7 @@ ul li{
     font-weight: bold 10px;
     font-size: 24px;
 }
-#detail {
-    width: 500px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: 25px;
-    -webkit-line-clamp: 1;   
-    height: 75px;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-}
+
 #connect{
     vertical-align: middle;
     border-style: none;
@@ -71,7 +62,7 @@ ul li{
     margin-bottom:30px;
     margin-top: -65px;
     padding: 20px;
-    text-align: center;
+   
 }
 #col-right {
     width: 300px;

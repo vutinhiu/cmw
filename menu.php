@@ -27,7 +27,7 @@
     <?php include_once('include/navbar.php'); ?>
     <!-- end -->
     <p>Bạn có thể tìm đọc tất cả các bài viết trên The Present Writer blog theo từ khoá, theo đề tài, hoặc theo thời gian xuất bản.</p>
-      
+       <?php  include_once('include/search/search_box.php')?>
         <?php
                             $sql = "SELECT * FROM category ORDER BY cat_id ASC";
                              $query = mysqli_query($conn,$sql);

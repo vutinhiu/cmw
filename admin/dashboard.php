@@ -29,19 +29,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- <div class="col-xs-12 col-md-6 col-lg-3">
-				<div class="panel panel-orange panel-widget">
-					<div class="row no-padding">
-						<div class="col-sm-3 col-lg-5 widget-left">
-							<svg class="glyph stroked empty-message"><use xlink:href="#stroked-empty-message"></use></svg>
-						</div>
-						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">52</div>
-							<div class="text-muted">Danh mục</div>
-						</div>
-					</div>
-				</div>
-			</div> -->
+			
 			<div class="col-xs-12 col-md-6 col-lg-3">
 				<div class="panel panel-teal panel-widget">
 					<div class="row no-padding">
@@ -49,8 +37,8 @@
 							<svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large"><?php echo mysqli_num_rows(mysqli_query($conn, $sql.'user')); ?></div>
-							<div class="text-muted">Thành Viên</div>
+							<div class="large"><?php echo mysqli_num_rows(mysqli_query($conn, $sql.'comment')); ?></div>
+							<div class="text-muted">Comment</div>
 						</div>
 					</div>
 				</div>

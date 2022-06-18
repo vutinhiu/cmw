@@ -23,7 +23,7 @@
         $str_body = '';
         $str_body .= '
             <p>
-                <b>Khách hàng:</b> '.$name.'<br>
+                <b>Chào bạn :</b> '.$name.'<br>
             </p>
             
         ';
@@ -71,10 +71,8 @@
 ?>
 <!--	Customer Info	-->
 
-                        <p id="button-right" > Email subscription</p>
-                        <form role="form" id="buyNow" method="post">
-                        <p>Nhận bài viết mới qua email</p>
-						<fieldset>
+                      
+						
                         <div class="form-group">
                             <label for="">Name</label>
 								<input class="form-control" placeholder="Name" name="name" type="name" value="">
@@ -83,10 +81,9 @@
                             <label for="">Email</label>
 								<input class="form-control" placeholder="E-mail" name="mail" type="email" autofocus>
 							</div>
-							
-							<a onclick="buyNow();alert('Bạn đã đăng ký thành công')  " class="btn btn-light float-md-left"  > Submit</i>
-						</fieldset>
-					</form>
+							<a onclick="buyNow(); alert('Bạn đã đăng ký thành công')"  > Submit </a>
+					
+				
 
 <!--	End Customer Info	-->
 

@@ -143,8 +143,7 @@
                             <ul class="pagination">
                                <?php echo $list_page; ?> 
                                
-                                <!-- <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+                               
                                 
                             </ul>
                         </nav>

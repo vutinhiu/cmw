@@ -36,23 +36,24 @@
                   
                     </div>
             <!--  XEM XÉT cột hàng bên trái -->
-             
-            </aside> <!-- col.// -->
+             <!-- col.// -->
                     </div>
                     
-                     <div class="col-md-12 " id="col-right">
+                    <div class="col-md-12 " id="col-right">
+                     <p id="button-right" > Email subscription</p>
+                        <form role="form" id="buyNow" method="post">
+                        <p>Nhận bài viết mới qua email</p>
                        <?php include_once('include/sendmail.php')?>
+                       </form>
                     </div>
                      
                      <div class="col-md-12" id="col-right">
                         <p id="button-right" > Kết nối</p>
-                        
-                           <div >
-                            <a  class="img-fluid"href="index.php"><img id="connect"src="images/wifi.png" alt=""></a>
-                            <a  class="img-fluid"href="https://follow.it/thepresentwriter?action=followPub"><img id="connect" src="images/email.png" alt=""></a>
-                            <a class="img-fluid"href="https://www.facebook.com/PresentWriter/"><img id="connect" src="images/facebook.png" alt=""></a>
-                            <a class="img-fluid"href=""><img id="connect"src="images/insta.png" alt=""></a>
-                     
+                           <div style="display: flex;">
+                            <a href="index.php"><img id="connect"src="images/wifi.png" alt=""></a>
+                            <a  href="https://follow.it/thepresentwriter?action=followPub"><img id="connect" src="images/email.png" alt=""></a>
+                            <a href="https://www.facebook.com/PresentWriter/"><img id="connect" src="images/facebook.png" alt=""></a>
+                            <a href=""><img id="connect"src="images/insta.png" alt=""></a>
                            </div>
                     </div>
                     <div class="col-md-12 text-center" id="col-right">

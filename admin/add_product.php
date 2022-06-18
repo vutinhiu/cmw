@@ -4,6 +4,8 @@ if(!defined('SECURITY')){
 }
 if(isset($_POST['sbm'])){
     $prd_name = $_POST['prd_name'];
+
+    $prd_content = $_POST['prd_content'];
     //upload file image
     $prd_image = $_FILES['prd_image']['name'];
 
@@ -32,8 +34,7 @@ if(isset($_POST['sbm'])){
                 $prd_featured = 0;
             }
             $prd_details = $_POST['prd_details'];
-            $prd_content = $_POST['prd_content'];
-            $sql = "INSERT INTO product (prd_name, prd_image, cat_id, prd_status, prd_featured, prd_details ,prd_content) VALUES ('$prd_name', '$prd_image', $cat_id, $prd_status, $prd_featured, '$prd_details', '$prd_content')";
+            $sql = "INSERT INTO product (prd_name,  prd_content, prd_image, cat_id, prd_status, prd_featured, prd_details) VALUES ('$prd_name',  '$prd_content', '$prd_image', $cat_id, $prd_status, $prd_featured, '$prd_details')";
             $query = mysqli_query($conn,$sql);
             header("location: index.php?page_layout=product");
         }
@@ -55,7 +56,7 @@ if(isset($_POST['sbm'])){
     <div class="row">
         <ol class="breadcrumb">
             <li><a href="index.php"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-            <li><a href="index.php?page_layout=product">Quản lý sản phẩm</a></li>
+            <li><a href="">Quản lý sản phẩm</a></li>
             <li class="active">Thêm sản phẩm</li>
         </ol>
     </div><!--/.row-->
@@ -77,9 +78,8 @@ if(isset($_POST['sbm'])){
                                 <input required name="prd_name" class="form-control" placeholder="">
                             </div>                        
                             <div class="form-group">
-                                <label>Nội dung sản phẩm</label>
-                                <textarea required name="prd_content" id="prd_content" class="form-control" rows="3"></textarea>
-                                <script>CKEDITOR.replace('prd_content');</script>
+                                <label>Tình trạng</label>
+                                <input required name="prd_content" type="text" class="form-control">
                             </div>
                         </div>
 
@@ -101,7 +101,7 @@ if(isset($_POST['sbm'])){
                                             if($extension == 'png' || $extension == 'jpg'){
                                                 //Kiểm tra kích thước file trước khi upload
                                                 var $size = input.files[0].size;
-                                                if($size > 102400){
+                                                if($size > 10240000){
                                                     document.getElementById('imgHolder').innerHTML = '';
                                                     document.getElementById('alert').innerHTML = 'Xin lỗi kích thước file quá lớn( lớn hơn 100MB)!';
                                                 }else{
@@ -140,8 +140,8 @@ if(isset($_POST['sbm'])){
                             <div class="form-group">
                                 <label>Trạng thái</label>
                                 <select name="prd_status" class="form-control">
-                                    <option value=1 selected>Đã duyệt</option>
-                                    <option value=0>Chờ duyệt</option>
+                                    <option value=1 selected>Còn hàng</option>
+                                    <option value=0>Hết hàng</option>
                                 </select>
                             </div>
                             
