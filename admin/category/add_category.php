@@ -14,14 +14,14 @@
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href="index.php"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-				<li><a href="index.php?page_layout=category">Quản lý danh mục</a></li>
-				<li class="active">Thêm danh mục</li>
+				<li><a href="index.php?page_layout=category">Quản lý mục lục</a></li>
+				<li class="active">Thêm mục lục</li>
 			</ol>
 		</div><!--/.row-->
 		
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">Thêm danh mục</h1>
+				<h1 class="page-header">Thêm mục lục</h1>
 			</div>
 		</div><!--/.row-->
         <div class="row">
@@ -32,8 +32,8 @@
                         	
                             <form role="form" method="post">
                                 <div class="form-group">
-                                    <label>Tên danh mục:</label>
-                                    <input required type="text" name="cat_name" class="form-control" placeholder="Tên danh mục...">
+                                    <label>Tên mục lục:</label>
+                                    <input required type="text" name="cat_name" class="form-control" placeholder="Tên mục lục...">
                                 </div>
                                 <button type="submit" name="sbm" class="btn btn-success">Thêm mới</button>
                                 <button type="reset" class="btn btn-default">Làm mới</button>

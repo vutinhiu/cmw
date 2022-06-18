@@ -37,20 +37,20 @@ $list_page .= '<li class="page-item"><a class="page-link" href="index.php?page_l
 	<div class="row">
 		<ol class="breadcrumb">
 			<li><a href="index.php"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-			<li class="active">Quản lý danh mục</li>
+			<li class="active">Quản lý mục lục</li>
 		</ol>
 	</div>
 	<!--/.row-->
 
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Quản lý danh mục</h1>
+			<h1 class="page-header">Quản lý mục lục</h1>
 		</div>
 	</div>
 	<!--/.row-->
 	<div id="toolbar" class="btn-group">
 		<a href="index.php?page_layout=add_category" class="btn btn-success">
-			<i class="glyphicon glyphicon-plus"></i> Thêm danh mục
+			<i class="glyphicon glyphicon-plus"></i> Thêm mục lục
 		</a>
 	</div>
 	<div class="row">
@@ -62,22 +62,22 @@ $list_page .= '<li class="page-item"><a class="page-link" href="index.php?page_l
 						<thead>
 							<tr>
 								<th data-field="id" data-sortable="true">ID</th>
-								<th>Tên danh mục</th>
+								<th>Tên mục lục</th>
 								<th>Hành động</th>
 							</tr>
 						</thead>
 						<tbody>
 							<?php
 							$sql = "SELECT * FROM category ORDER BY cat_id ASC LIMIT " . $per_row . ',' . $row_per_page;
-							$query = mysqli_query($conn, $sql);
-							while ($row = mysqli_fetch_array($query)) {
+							$sql_cat = mysqli_query($conn, $sql);
+							while ($row_cat= mysqli_fetch_array($sql_cat)) {
 							?>
 								<tr>
-									<td style=""><?php echo $row['cat_id']; ?></td>
-									<td style=""><?php echo $row['cat_name']; ?></td>
+									<td style=""><?php echo $row_cat['cat_id']; ?></td>
+									<td style=""><?php echo $row_cat['cat_name']; ?></td>
 									<td class="form-group">
-										<a href="index.php?page_layout=edit_category&&cat_id=<?php echo $row['cat_id']; ?>" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i></a>
-										<a type="button" class="btn btn-danger" data-toggle="modal" data-href-id="del_category.php?cat_id=<?php echo $row['cat_id'];?> "data-name-id="Danh mục  : <?php echo $row['cat_name'];?> "data-target="#confirmDialod" style="border:none; outline:none;">
+										<a href="index.php?page_layout=edit_category&&cat_id=<?php echo $row_cat['cat_id']; ?>" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i></a>
+										<a type="button" class="btn btn-danger" data-toggle="modal" data-href-id="del_category.php?cat_id=<?php echo $row_cat['cat_id'];?> "data-name-id="mục lục  : <?php echo $row_cat['cat_name'];?> "data-target="#confirmDialod" style="border:none; outline:none;">
                                         <i class="glyphicon glyphicon-remove border-0"></i>
                                     </a> 
 
@@ -90,7 +90,7 @@ $list_page .= '<li class="page-item"><a class="page-link" href="index.php?page_l
                                                 <h5 class="modal-title" id="confirmDialodTitle"></h5>
                                             </div>
                                             <div class="modal-body">
-                                                Bạn chắc chắn muốn xóa danh mục này không?
+                                                Bạn chắc chắn muốn xóa mục lục này không?
                                             </div>
                                             <div class="modal-footer">
                                                 <a href="#" type="button" class="btn btn-primary" id="deletes">Có</a>
@@ -119,11 +119,7 @@ $list_page .= '<li class="page-item"><a class="page-link" href="index.php?page_l
 					<nav aria-label="Page navigation example">
 						<ul class="pagination">
 							<?php echo $list_page; ?>
-							<!-- <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-										<li class="page-item"><a class="page-link" href="#">1</a></li>
-										<li class="page-item"><a class="page-link" href="#">2</a></li>
-										<li class="page-item"><a class="page-link" href="#">3</a></li>
-										<li class="page-item"><a class="page-link" href="#">&raquo;</a></li> -->
+					
 						</ul>
 					</nav>
 				</div>

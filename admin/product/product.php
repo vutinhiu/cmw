@@ -44,18 +44,18 @@
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href="index.php"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-				<li class="active">Danh sách sản phẩm</li>
+				<li class="active">Danh sách bài viết</li>
 			</ol>
 		</div><!--/.row-->
 		
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">Danh sách sản phẩm</h1>
+				<h1 class="page-header">Danh sách bài viết</h1>
 			</div>
 		</div><!--/.row-->
 		<div id="toolbar" class="btn-group">
             <a href="index.php?page_layout=add_product" class="btn btn-success">
-                <i class="glyphicon glyphicon-plus"></i> Thêm sản phẩm
+                <i class="glyphicon glyphicon-plus"></i> Thêm bài viết
             </a>
         </div>
 		<div class="row">
@@ -69,9 +69,8 @@
 						    <thead>
 						    <tr>
 						        <th data-field="id" data-sortable="true">ID</th>
-						        <th data-field="name"  data-sortable="true">Tên sản phẩm</th>
-                               
-                                <th>Ảnh sản phẩm</th>
+						        <th data-field="name"  data-sortable="true">Tên bài viết</th>
+                                <th>Ảnh bài viết</th>
                                 <th>Trạng thái</th>
                                 <th>Danh mục</th>
                                 <th>Hành động</th>
@@ -86,7 +85,7 @@
                                     <tr>
                                         <td style=""><?php echo $row['prd_id'];?></td>
                                         <td style=""><?php echo $row['prd_name'];?></td>
-                                      
+                                
                                         <td style="text-align: center"><img width="130" height="180" src="images/<?php echo $row['prd_image'];?>" /></td>
                                         <td>
                                             <?php 
@@ -101,7 +100,7 @@
                                         <td><?php echo $row['cat_name'];?></td>
                                         <td class="form-group">
                                             <a href="index.php?page_layout=edit_product&&prd_id=<?php echo $row['prd_id'];?>" id="<?php echo $row['prd_id'];?>" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i></a>
-                                            <a type="button" class="btn btn-danger" data-toggle="modal" data-href-id="del_product.php?prd_id=<?php echo $row['prd_id'];?> "data-name-id="Sản phẩm: <?php echo $row['prd_name'];?> "data-target="#confirmDialod" style="border:none; outline:none;">
+                                            <a type="button" class="btn btn-danger" data-toggle="modal" data-href-id="del.php?prd_id=<?php echo $row['prd_id'];?> "data-name-id="Bài viết : <?php echo $row['prd_name'];?> "data-target="#confirmDialod" style="border:none;                                     outline:none;">
                                         <i class="glyphicon glyphicon-remove border-0"></i>
                                     </a>
 
@@ -114,7 +113,7 @@
                                                 <h5 class="modal-title" id="confirmDialodTitle"></h5>
                                             </div>
                                             <div class="modal-body">
-                                                Bạn chắc chắn muốn xóa sản phẩm này không?
+                                                Bạn chắc chắn muốn xóa bài viết này không?
                                             </div>
                                             <div class="modal-footer">
                                                 <a href="#" type="button" class="btn btn-primary" id="deletes">Có</a>
