@@ -77,7 +77,7 @@ $list_page .= '<li class="page-item"><a class="page-link" href="index.php?page_l
 									<td style=""><?php echo $row_cat['cat_name']; ?></td>
 									<td class="form-group">
 										<a href="index.php?page_layout=edit_category&&cat_id=<?php echo $row_cat['cat_id']; ?>" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i></a>
-										<a type="button" class="btn btn-danger" data-toggle="modal" data-href-id="del.php?cat_id=<?php echo $row_cat['cat_id'];?> "data-name-id="mục lục  : <?php echo $row_cat['cat_name'];?> "data-target="#confirmDialod" style="border:none; outline:none;">
+										<a type="button" class="btn btn-danger" data-toggle="modal" data-href-id="del_category.php?cat_id=<?php echo $row_cat['cat_id'];?> "data-name-id="mục lục  : <?php echo $row_cat['cat_name'];?> "data-target="#confirmDialod" style="border:none; outline:none;">
                                         <i class="glyphicon glyphicon-remove border-0"></i>
                                     </a> 
 

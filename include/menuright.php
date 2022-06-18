@@ -38,7 +38,7 @@
             <!--  XEM XÉT cột hàng bên trái -->
              <!-- col.// -->
                     </div>
-                    
+                    <?php include_once('featured.php')?>
                     <div class="col-md-12 " id="col-right">
                      <p id="button-right" > Email subscription</p>
                         <form role="form" id="buyNow" method="post">

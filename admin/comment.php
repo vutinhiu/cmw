@@ -76,7 +76,7 @@ $list_page .= '<li class="page-item"><a class="page-link" href="index.php?page_l
 									<td style=""><?php echo $row_cat['comm_mail']; ?></td>
 									<td style=""><?php echo $row_cat['comm_details']; ?></td>
                                     <td class="form-group">
-                                    <a type="button" class="btn btn-danger" data-toggle="modal" data-href-id="del.php?comm_id=<?php echo $row_cat['comm_id'];?> "data-name-id="Người bình luận  : <?php echo $row_cat['comm_name'];?> "data-target="#confirmDialod" style="border:none; outline:none;">
+                                    <a type="button" class="btn btn-danger" data-toggle="modal" data-href-id="del_comment.php?comm_id=<?php echo $row_cat['comm_id'];?> "data-name-id="Người bình luận  : <?php echo $row_cat['comm_name'];?> "data-target="#confirmDialod" style="border:none; outline:none;">
                                         <i class="glyphicon glyphicon-remove border-0"></i>
                                     </a> 
 

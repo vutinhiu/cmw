@@ -35,6 +35,7 @@ ul li{
     vertical-align: middle;
     border-style: none;
     width: 40px;
+   
 }
  #insta{
     width: 100px;
@@ -54,6 +55,7 @@ ul li{
 }
 
 #button-right {
+    text-align: center;
     text-transform: uppercase;
     border: 1px solid #000;
   background-color: #000;

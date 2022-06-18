@@ -56,14 +56,14 @@ if(isset($_POST['sbm'])){
     <div class="row">
         <ol class="breadcrumb">
             <li><a href="index.php"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-            <li><a href="">Quản lý sản phẩm</a></li>
-            <li class="active">Thêm sản phẩm</li>
+            <li><a href="">Quản lý bài viết</a></li>
+            <li class="active">Thêm bài viết</li>
         </ol>
     </div><!--/.row-->
     
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Thêm sản phẩm</h1>
+            <h1 class="page-header">Thêm bài viết</h1>
         </div>
     </div><!--/.row-->
     <div class="row">
@@ -74,7 +74,7 @@ if(isset($_POST['sbm'])){
                     <form role="form" method="post" enctype="multipart/form-data">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Tên sản phẩm</label>
+                                <label>Tên bài viết</label>
                                 <input required name="prd_name" class="form-control" placeholder="">
                             </div>                        
                             <div class="form-group">
@@ -85,7 +85,7 @@ if(isset($_POST['sbm'])){
 
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Ảnh sản phẩm</label>
+                                <label>Ảnh bài viết</label>
                                 <div style="position: relative;">
                                     <input type="file" style="width: 7.7rem;" id="file" onchange="readURL(this);" require name="prd_image">      
                                     <div id="alert" style="position:absolute; top: 5%; left: 7.7rem;"><?php if(isset($error)) {echo $error;} ?></div>
@@ -140,13 +140,13 @@ if(isset($_POST['sbm'])){
                             <div class="form-group">
                                 <label>Trạng thái</label>
                                 <select name="prd_status" class="form-control">
-                                    <option value=1 selected>Còn hàng</option>
-                                    <option value=0>Hết hàng</option>
+                                    <option value=1 selected>Đã duyệt</option>
+                                    <option value=0>Chờ duyệt</option>
                                 </select>
                             </div>
                             
                             <div class="form-group">
-                                <label>Sản phẩm nổi bật</label>
+                                <label>Bài viết nổi bật</label>
                                 <div class="checkbox">
                                     <label>
                                         <input name="prd_featured" type="checkbox" value=1>Nổi bật
@@ -154,7 +154,7 @@ if(isset($_POST['sbm'])){
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label>Mô tả sản phẩm</label>
+                                <label>Mô tả bài viết</label>
                                 <textarea required name="prd_details" id="prd_details" class="form-control" rows="3"></textarea>
                                 <script>CKEDITOR.replace('prd_details');</script>
                             </div>
