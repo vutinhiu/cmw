@@ -42,7 +42,7 @@
             $query = mysqli_query($conn, $sql);
             while($row = mysqli_fetch_array($query)){
         ?>
-                    <div class="col-md-12" id="col-left">
+                    <div class="col-md-12 border pt-20" id="col-left" >
                         <!-- id="col-left" -->
                         <?php  if($row['prd_status']==1){ ?>
                         <p id="title"><?php echo $row['prd_name']?></p>

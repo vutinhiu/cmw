@@ -3,7 +3,7 @@
 <head>
         <meta charset="UTF-8"/> <!--cài charset về utf8 -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--chỉnh khu vực hiển thị theo kích thước của thiết bị -->
-        <title>Website của nhóm</title>
+        <title>Trang chủ BLog</title>
         <link rel="stylesheet" href="css/style.css">     
         <link rel="stylesheet" href="css/bootstrap.css">   
         <link rel="stylesheet" href="css/bootstrap.css.map">   
@@ -23,7 +23,7 @@
                 <a class="nav-link" href="blog.php">BLOG</a>
               </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">TÁC GIẢ</a>
+                <a class="nav-link" href="#">YOU TUBE</a>
               </li>
               
               <li class="nav-item">
@@ -37,7 +37,7 @@
         <header class="header border" style="padding: 40px; background-color:wheat; ">
             <div class="content text-center "> <!--một division aka một dạng container-->
                 <h1 class="heading">
-                  <img src="images/imageindex.png" alt="" claas="img-fluid" style="width:1250px;" srcset="">
+                  <img src="images/imageindex.png" alt="" style="width:1400px;" srcset="">
                     
                 </h1>
               
@@ -45,6 +45,7 @@
         </header>
        
        <div class="container" style="display:flex; size:10px;" >
+    
           <img src="images/avtchinguyen.png" style=" width:25%;float:left"alt="">
           <ul style="float: right;">  <h3 class="text-center">Xin Chào!</h3> <br>
           <li> Cảm ơn bạn đã ghé thăm website The Present Writer. Đây là một “khu vườn xanh yên tĩnh”—theo cách gọi của nhiều người yêu The Present Writer—là nơi để bạn nghỉ ngơi, suy ngẫm và lắng nghe tâm hồn mình sau những ồn ào, mệt mỏi của thế giới bên ngoài. </li><br>
